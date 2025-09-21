@@ -30,7 +30,7 @@ function App() {
     formData.append('keywords', keywords);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/generate', {
+      const response = await fetch('https://artisan-ai-backend.onrender.com/api/generate', {
         method: 'POST',
         body: formData,
       });
